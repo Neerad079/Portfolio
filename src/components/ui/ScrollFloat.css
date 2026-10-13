@@ -1,0 +1,20 @@
+.scroll-float {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.scroll-float-text {
+  display: inline-block;
+  font-family: var(--font-display, 'Bebas Neue', sans-serif);
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-primary, #ffffff);
+}
+
+.char {
+  display: inline-block;
+}
