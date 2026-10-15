@@ -75,7 +75,7 @@ export default function Projects() {
                         {project.date}
                       </span>
                       <span
-                        className="mono-font"
+                        className="mono-font project-card__stack-num"
                         style={{
                           marginLeft: 'auto',
                           fontSize: '0.85rem',

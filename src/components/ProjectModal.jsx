@@ -12,17 +12,17 @@ export default function ProjectModal({ project, onClose }) {
           <X size={20} />
         </button>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem', marginBottom: '0.5rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem', marginBottom: '0.5rem', paddingRight: '2.5rem', flexWrap: 'wrap' }}>
           <span className="tag tag--accent">{project.badge}</span>
           <span className="mono-font" style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
             {project.date}
           </span>
         </div>
 
-        <h3 style={{ fontSize: '2rem', color: '#ffffff', marginBottom: '0.4rem', textTransform: 'uppercase' }}>
+        <h3 style={{ fontSize: 'clamp(1.5rem, 4.5vw, 2rem)', color: '#ffffff', marginBottom: '0.4rem', textTransform: 'uppercase', wordBreak: 'break-word' }}>
           {project.title}
         </h3>
-        <p style={{ color: 'var(--accent-red)', fontFamily: 'var(--font-mono)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>
+        <p style={{ color: 'var(--accent-red)', fontFamily: 'var(--font-mono)', fontSize: '0.9rem', marginBottom: '1.5rem', wordBreak: 'break-word' }}>
           {project.tagline}
         </p>
 
@@ -44,11 +44,11 @@ export default function ProjectModal({ project, onClose }) {
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
               {Object.entries(project.architecture).map(([key, val]) => (
-                <div key={key} style={{ display: 'flex', gap: '0.5rem', fontSize: '0.85rem' }}>
+                <div key={key} style={{ display: 'flex', gap: '0.5rem', fontSize: '0.85rem', flexWrap: 'wrap' }}>
                   <span style={{ color: 'var(--text-muted)', textTransform: 'capitalize', minWidth: '110px', fontFamily: 'var(--font-mono)' }}>
                     {key.replace(/([A-Z])/g, ' $1')}:
                   </span>
-                  <span style={{ color: '#ffffff' }}>{val}</span>
+                  <span style={{ color: '#ffffff', wordBreak: 'break-word', flex: '1 1 180px' }}>{val}</span>
                 </div>
               ))}
             </div>
@@ -82,7 +82,7 @@ export default function ProjectModal({ project, onClose }) {
         </div>
 
         {/* Actions */}
-        <div style={{ display: 'flex', gap: '1rem' }}>
+        <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
           <a
             href={project.github}
             target="_blank"

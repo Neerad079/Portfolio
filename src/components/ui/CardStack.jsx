@@ -60,7 +60,7 @@ export function CardStackItem({
     : 1;
 
   // Responsive sticky top position
-  const stickyTop = `calc(var(--header-height, 72px) + 1rem + ${index * topOffset}px)`;
+  const stickyTop = `calc(var(--header-height, 72px) + var(--card-stack-offset-base, 1rem) + (${index} * var(--card-stack-top-offset, ${topOffset}px)))`;
 
   return (
     <motion.div

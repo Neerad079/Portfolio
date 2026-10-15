@@ -33,6 +33,22 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') setMobileOpen(false);
+    };
+    if (mobileOpen) {
+      window.addEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = '';
+    };
+  }, [mobileOpen]);
+
   const navLinks = [
     { name: 'About', href: '#about', id: 'about' },
     { name: 'Architecture', href: '#architecture', id: 'architecture' },
@@ -108,13 +124,27 @@ export default function Navbar() {
         </div>
       </header>
 
+      {/* Mobile Drawer Backdrop */}
+      {mobileOpen && (
+        <div
+          className="mobile-drawer-backdrop"
+          onClick={() => setMobileOpen(false)}
+          aria-hidden="true"
+        />
+      )}
+
       {/* Mobile Drawer */}
-      <div className={`mobile-drawer ${mobileOpen ? 'mobile-drawer--open' : ''}`}>
+      <div
+        className={`mobile-drawer ${mobileOpen ? 'mobile-drawer--open' : ''}`}
+        id="mobile-navigation"
+        role="dialog"
+        aria-label="Mobile Navigation"
+      >
         {navLinks.map((link) => (
           <a
             key={link.id}
             href={link.href}
-            className="mobile-drawer__link"
+            className={`mobile-drawer__link ${activeSection === link.id ? 'mobile-drawer__link--active' : ''}`}
             onClick={() => setMobileOpen(false)}
           >
             {link.name}
@@ -125,7 +155,7 @@ export default function Navbar() {
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn--primary"
-          style={{ marginTop: '1rem', width: '100%' }}
+          style={{ marginTop: '0.75rem', width: '100%' }}
           onClick={() => setMobileOpen(false)}
         >
           <FileText size={16} />

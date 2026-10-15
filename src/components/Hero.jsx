@@ -131,7 +131,6 @@ export default function Hero() {
               tileColor="#13111a"
               textColor="#f9452d"
               tileRadius={6}
-              gap={5}
               loop
               padTo={16}
             />
@@ -181,7 +180,7 @@ export default function Hero() {
             <ArrowUpRight size={18} />
           </a>
 
-          <div style={{ display: 'flex', gap: '0.75rem', marginLeft: 'auto' }}>
+          <div className="hero__socials">
             <a
               href={PERSONAL_INFO.github}
               target="_blank"
