@@ -30,7 +30,7 @@ export default function About() {
           {/* Main Story & Approach */}
           <div className="about__text-block">
             <p className="about__lead">
-              I am a Computer Science undergraduate at the <strong>{PERSONAL_INFO.college}</strong> (Class of 2028),
+              I am a Computer Science undergraduate at the <strong>{PERSONAL_INFO.college}</strong>,
               focused on designing resilient backend architectures and responsive, accessible full-stack applications.
             </p>
 
@@ -41,15 +41,15 @@ export default function About() {
             </p>
 
             <p>
-              Recently, I built <strong>HireIQ</strong> for the <em>Razorpay AI BuildAthon 2026</em>, integrating Claude 3.5 Sonnet
-              into an enterprise Spring Boot backend with sub-3s response scoring. I treat software engineering as a discipline of
+              Recently, I built <strong>HireIQ</strong> for the <em>Razorpay AI BuildAthon 2026</em>, integrating an NVIDIA model
+              into a Spring Boot backend with sub-3s response scoring. I treat software engineering as a discipline of
               contract integrity—ensuring every DTO is validated, every transaction is rollback-safe, and every sensitive endpoint
               is protected by stateless token authentication.
             </p>
 
             <p>
-              When not writing backend services, I solve algorithmic challenges in Java and C++, continuously refining my understanding
-              of graph algorithms, dynamic programming, and low-level concurrency.
+              When not writing backend services, I explore new tools in the Java and web ecosystems, continuously refining my understanding
+              of software engineering, object-oriented design, and clean architecture.
             </p>
           </div>
 
@@ -89,9 +89,9 @@ export default function About() {
                 <Terminal size={20} />
               </div>
               <div>
-                <h4 className="about__credential-heading">Test-Driven Confidence</h4>
+                <h4 className="about__credential-heading">Test-Driven Verification</h4>
                 <p className="about__credential-desc">
-                  80%+ line test coverage via JUnit 5 and Mockito, isolating database transactions with programmatic rollbacks.
+                  Unit testing via JUnit 5 and Mockito, isolating database transactions with programmatic rollbacks.
                 </p>
               </div>
             </div>
@@ -101,9 +101,9 @@ export default function About() {
                 <Award size={20} />
               </div>
               <div>
-                <h4 className="about__credential-heading">Competitive Programming</h4>
+                <h4 className="about__credential-heading">HackerRank Java 5-Star</h4>
                 <p className="about__credential-desc">
-                  HackerRank Java 5-Star Gold Badge (Top 10% global ranking) with 100+ solved algorithmic challenges.
+                  Earned 5-Star Gold Badge in Java on HackerRank, demonstrating proficiency in core language concepts and OOP design.
                 </p>
               </div>
             </div>

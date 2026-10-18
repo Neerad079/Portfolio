@@ -5,6 +5,7 @@ import { PERSONAL_INFO, STATS } from '../data/portfolioData';
 import { GithubIcon } from './Icons';
 
 import SplitFlapText from './ui/SplitFlapText';
+import TechText from './ui/TechText';
 
 // Framer-inspired soothing text entrance animation variants
 const headlineContainerVariants = {
@@ -95,6 +96,43 @@ export default function Hero() {
   return (
     <section className="hero" id="hero">
       <div className="container">
+        {/* Interactive TechText Animation (Replaces pill and glowing dot) */}
+        <motion.div
+          className="hero__tech-text-wrap"
+          variants={soothingLineVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <TechText
+            text="Hi, I'm Neerad · Java & Spring Boot Developer"
+            fontWeight={600}
+            fontSize={34}
+            reveal="letter"
+            dashLength={4}
+            dashGap={2}
+            specks={15}
+            intro="none"
+            introDuration={2}
+            clickKick
+            guides={false}
+            fontFamily=""
+            letterSpacing={-0.05}
+            accentColor="#ffffff"
+            reach={200}
+            softness={0.7}
+            lineStyle="dashed"
+            strokeWidth={1.5}
+            speed={1}
+            bounce={0.4}
+            selection
+            labels
+            color="#ffffff"
+            align="left"
+            draggable
+            sweep
+          />
+        </motion.div>
+
         {/* Main Heading with Soothing Framer-style Entrance Animation */}
         <motion.h1
           className="hero__headline"
@@ -110,7 +148,7 @@ export default function Hero() {
             BUILDING
           </motion.span>
 
-          {/* Line 2: Mechanical Split-Flap Board */}
+          {/* Line 2: Mechanical Split-Flap Board (Original words restored) */}
           <motion.span
             className="hero__headline-flap"
             variants={soothingLineVariants}
@@ -152,9 +190,7 @@ export default function Hero() {
           initial="hidden"
           animate="visible"
         >
-          Full-stack & backend developer specializing in <strong>Java</strong>, <strong>Spring Boot</strong>, and{' '}
-          <strong>React</strong>. CS undergrad at <strong>{PERSONAL_INFO.college}</strong> building secure RESTful
-          architectures, containerized microservices, and AI-powered career systems.
+          Java &amp; Spring Boot developer building secure REST APIs, full-stack applications, and AI-powered tools with Spring Boot, React, and MySQL. CS undergrad at <strong>{PERSONAL_INFO.college}</strong>.
         </motion.p>
 
         {/* Action CTAs */}
@@ -171,6 +207,7 @@ export default function Hero() {
 
           <a
             href={PERSONAL_INFO.resumeUrl}
+            download="Neerad_S_Ramesh_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn--outline"
@@ -215,7 +252,7 @@ export default function Hero() {
                 {stat.value}
               </span>
               <span className="stat-item__label">{stat.label}</span>
-              <span className="stat-item__detail">{stat.detail}</span>
+              {stat.detail && <span className="stat-item__detail">{stat.detail}</span>}
             </div>
           ))}
         </motion.div>

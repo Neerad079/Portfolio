@@ -4,31 +4,39 @@
 
 ![React](https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-6.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-14.2-0055FF?style=for-the-badge&logo=framer&logoColor=white)
-![GSAP](https://img.shields.io/badge/GSAP-3.15-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
-![Lenis](https://img.shields.io/badge/Lenis-Smooth_Scroll-000000?style=for-the-badge)
+![Java](https://img.shields.io/badge/Java-17%2F21-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)
 
-**Full-Stack & Backend Systems Developer**  
+**Java & Spring Boot Developer**  
 CS Undergraduate at the **National Institute of Technology (NIT), Srinagar**  
-Specializing in **Java 21**, **Spring Boot 3.x**, **React 19**, and Distributed Architectures.
+Building secure REST APIs, full-stack applications, and AI-powered tools with Spring Boot, React, and MySQL.
 
-[🌐 Live Website (neerad.tech)](https://neerad.tech) • [💼 GitHub Profile](https://github.com/Neerad079) • [📄 Resume](https://neerad.tech/Neerad_S_Ramesh_Resume.pdf)
+[🌐 Live Website](https://neerad079.github.io/Portfolio/) • [💼 GitHub Profile](https://github.com/Neerad079) • [📄 Download Resume (PDF)](https://neerad079.github.io/Portfolio/Neerad_S_Ramesh_Resume.pdf)
 
 </div>
 
 ---
 
+## 📌 About The Project
+
+This is the personal portfolio of **Neerad S Ramesh**, designed to showcase real engineering implementations: full-stack systems, clean 4-layer backend architectures, stateless token authentication chains, and AI prompt engineering pipelines.
+
+Built with a performance-first mindset using **React 19**, **Vite 6**, and modern **Vanilla CSS**, the site incorporates custom interactive elements (split-flap airport display, interactive architecture specs, stacked cards) while remaining lightweight, fast, accessible, and mobile-friendly.
+
+---
+
 ## ⚡ Highlights & Interactive Features
 
-- **🌊 Codex-Reveal ASCII Fluid Simulation:** An interactive 2D wave-equation physics simulation rendered on HTML5 canvas with ASCII matrix characters. Reacts dynamically to cursor movement, mouse clicks, and scroll gestures with automated idle CPU conservation.
-- **🎨 Framer-Style Dynamic Scroll Background:** Continuous background atmosphere that shifts smoothly between calibrated palettes (*Obsidian Ember → Midnight Slate → Tech Sapphire → Carbon Emerald → Cyber Violet → Warm Bronze → Crimson Obsidian*) as visitors journey through sections.
+- **⚡ Interactive TechText Glyph Canvas:** Interactive physics-driven intro headline with dashed letter reveals, real-time bounding box inspection, and spring physics.
 - **🛫 Mechanical Split-Flap Text Display:** Airport-style split-flap flip display cycling through core engineering pillars (`PRODUCTION-GRADE`, `HIGH-THROUGHPUT`, `FAULT-TOLERANT`, `MISSION-CRITICAL`, `ENTERPRISE-SCALE`).
-- **✨ Soothing Headline Entrance:** Ethereal initial load animation featuring soft Gaussian blur dissolution, staggered reveals, and silky cubic-bezier deceleration curves.
-- **🛹 Buttery Smooth Scrolling:** Powered by **Lenis** smooth scroll momentum, synchronized in lockstep with **GSAP ScrollTrigger** and **Framer Motion**.
-- **🏛️ Interactive Architecture Deep Dive:** Live architectural blueprint explorer detailing authentication chains, reactive AI prompt pipelines, and database transaction boundaries.
-- **🃏 Inspira UI CardStack:** Interactive sticky card stack showcasing production projects with stack metrics and live GitHub links.
-- **🧪 Liquid Glass Navigation:** Floating glassmorphism navbar with refractive border lighting and section indicators.
+- **🏛️ Interactive Architecture Deep Dive:** Inspect actual backend code flows for HireIQ's prompt orchestration (`AnalysisService.java`), stateless JWT security chain (`JwtAuthFilter.java`), and transaction-safe ORM persistence (`FormDAOImpl.java`).
+- **🃏 Inspira-UI CardStack:** Sticky scroll-animated card stack highlighting verified projects: [HireIQ](https://hireiq.neerad.tech/) (Razorpay AI BuildAthon 2026), Urban Heat Mitigation (ISRO Hackathon 2026), Student Login Portal, and Google Forms Clone.
+- **✉️ Working Web3Forms Contact Form:** In-browser contact form delivered straight to inbox (`neeradsramesh@gmail.com`) with honeypot spam protection, client validation, loading state, and build-time fallback.
+- **🛹 Silky Smooth Scrolling:** Powered by **Lenis** smooth scroll momentum and synchronized with **GSAP ScrollTrigger**.
+- **🌊 Codex-Reveal ASCII Canvas:** Subtle interactive fluid simulation on HTML5 canvas with automated idle conservation.
+- **🧪 Floating Liquid Glass Navbar:** Glassmorphism navigation with active section detection and accessible mobile drawer.
 
 ---
 
@@ -38,9 +46,9 @@ Specializing in **Java 21**, **Spring Boot 3.x**, **React 19**, and Distributed 
 | :--- | :--- |
 | **Frontend Core** | React 19, Vite 6, HTML5, Vanilla CSS Design System |
 | **Motion & Physics** | Framer Motion 14, GSAP 3 (ScrollTrigger), Lenis Smooth Scroll |
-| **Visual FX** | HTML5 Canvas 2D Wave Equation, SVG Filters, Glassmorphism |
-| **Backend & Systems (Featured)** | Java 21, Spring Boot 3.x, Spring Security, Kafka, Redis, Docker, PostgreSQL |
-| **Deployment** | GitHub Actions, GitHub Pages, Vercel ready |
+| **Backend & Systems (Featured)** | Java 17/21, Spring Boot 3.x, Spring Security, JWT, MySQL 8.0, Hibernate ORM, JUnit 5, Mockito |
+| **Form Delivery** | Web3Forms API (Static-friendly email submissions) |
+| **CI/CD & Hosting** | GitHub Actions, GitHub Pages (with relative `./` base path) |
 
 ---
 
@@ -50,38 +58,44 @@ Specializing in **Java 21**, **Spring Boot 3.x**, **React 19**, and Distributed 
 Portfolio/
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml            # Automated GitHub Pages CI/CD
+│       └── deploy.yml            # Automated GitHub Pages CI/CD workflow
 ├── public/
-│   └── Neerad_S_Ramesh_Resume.pdf # Downloadable resume
+│   ├── favicon.svg               # Scalable brand vector favicon
+│   ├── og-image.png              # 1200x630 Open Graph sharing preview
+│   ├── robots.txt                # Search engine crawler directives
+│   ├── sitemap.xml               # Canonical sitemap
+│   └── Neerad_S_Ramesh_Resume.pdf# Downloadable resume
 ├── src/
 │   ├── components/
 │   │   ├── ui/
+│   │   │   ├── CardStack.jsx     # Sticky stacked project cards
 │   │   │   ├── CodexReveal.jsx   # Interactive ASCII fluid canvas
-│   │   │   ├── DynamicScrollBackground.jsx # Framer-style color morph
-│   │   │   ├── GlassSurface.jsx  # Liquid glassmorphism component
+│   │   │   ├── DynamicScrollBackground.jsx # Framer-style ambient morph
+│   │   │   ├── GlassSurface.jsx  # Liquid glassmorphism wrapper
+│   │   │   ├── ScrollFloat.jsx   # GSAP scroll reveal headers
 │   │   │   ├── SmoothScroll.jsx  # Lenis + GSAP scroll engine
-│   │   │   ├── SplitFlapText.jsx # Mechanical flip text board
-│   │   │   ├── ScrollFloat.jsx   # GSAP text scroll animations
-│   │   │   └── CardStack.jsx     # Sticky stacked project cards
-│   │   ├── About.jsx             # Technical profile & credentials
-│   │   ├── ArchitectureShowcase.jsx # System architecture blueprint
-│   │   ├── Contact.jsx           # Interactive contact & copy tools
-│   │   ├── Education.jsx         # NIT Srinagar & academics
-│   │   ├── Footer.jsx            # Socials and closing strip
-│   │   ├── Hero.jsx              # Hero section with headline motion
-│   │   ├── Icons.jsx             # Custom SVG brand icons
-│   │   ├── Navbar.jsx            # Floating liquid glass navbar
-│   │   ├── Projects.jsx          # Featured systems showcase
-│   │   └── Skills.jsx            # Categorized technical disciplines
+│   │   │   └── SplitFlapText.jsx # Airport split-flap mechanical flip board
+│   │   ├── About.jsx             # Story, education, and engineering pillars
+│   │   ├── ArchitectureShowcase.jsx # System architecture & real code viewer
+│   │   ├── Contact.jsx           # Web3Forms contact form & copy email tool
+│   │   ├── Education.jsx         # NIT Srinagar academics & credentials
+│   │   ├── Footer.jsx            # Socials and back-to-top navigation
+│   │   ├── Hero.jsx              # Hero with eyebrow, headline & verified stats
+│   │   ├── Icons.jsx             # SVG icons (GitHub, etc.)
+│   │   ├── Navbar.jsx            # Floating glass navbar with mobile drawer
+│   │   ├── ProjectModal.jsx      # Modal specs viewer for featured projects
+│   │   ├── Projects.jsx          # Featured systems & secondary repositories
+│   │   └── Skills.jsx            # Categorized skills matrix
 │   ├── data/
-│   │   └── portfolioData.js      # Centralized profile and project data
+│   │   └── portfolioData.js      # Centralized facts, projects, and skills
 │   ├── App.jsx                   # Main layout and composition
-│   ├── index.css                 # Lyniq-inspired CSS tokens & typography
-│   └── main.jsx                  # React 19 entry point
-├── .gitignore                    # Git exclusions
-├── index.html                    # SEO, Open Graph & typography fonts
-├── package.json                  # Dependencies and metadata
-├── vite.config.js                # Vite build configuration (base: './')
+│   ├── index.css                 # Design system tokens and styles
+│   └── main.jsx                  # React 19 application entry
+├── .env.example                  # Environment variables template
+├── .gitignore                    # Excluded files & directories
+├── index.html                    # SEO metadata, Open Graph, fonts
+├── package.json                  # Dependencies, scripts, and repository info
+├── vite.config.js                # Vite build config with manual chunking
 └── README.md
 ```
 
@@ -106,18 +120,28 @@ Portfolio/
    npm install
    ```
 
-3. **Start the local development server:**
+3. **Configure Environment Variables (Optional for local contact form):**
+   ```bash
+   cp .env.example .env
+   ```
+   Add your Web3Forms access key in `.env`:
+   ```env
+   VITE_WEB3FORMS_KEY=your_web3forms_key_here
+   ```
+   *(If not set, the contact form automatically displays a direct `mailto:` fallback so the site is never broken).*
+
+4. **Start the local development server:**
    ```bash
    npm run dev
    ```
    Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-4. **Create a production build:**
+5. **Create a production build:**
    ```bash
    npm run build
    ```
 
-5. **Preview the production build locally:**
+6. **Preview the production build locally:**
    ```bash
    npm run preview
    ```
@@ -126,32 +150,47 @@ Portfolio/
 
 ## 🌐 Deploying to GitHub Pages
 
-This repository includes a pre-configured GitHub Actions workflow in [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
+This repo includes an automated GitHub Actions deployment workflow at [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
 
-To activate automated deployment:
-1. Push this repository to GitHub:
-   ```bash
-   git remote add origin https://github.com/Neerad079/Portfolio.git
-   git branch -M main
-   git push -u origin main
-   ```
-2. In your GitHub repository settings:
-   - Navigate to **Settings** → **Pages**.
-   - Under **Build and deployment** → **Source**, select **GitHub Actions**.
-3. Every push to `main` will automatically build and deploy your portfolio!
+### Step 1: Add Web3Forms Key as a GitHub Secret
+1. Go to [https://web3forms.com](https://web3forms.com) and enter `neeradsramesh@gmail.com` to receive your free access key.
+2. In your GitHub repository:
+   - Click **Settings** (top tab).
+   - In the left sidebar, click **Secrets and variables** → **Actions**.
+   - Click **New repository secret**.
+   - Name: `VITE_WEB3FORMS_KEY`
+   - Secret: *paste your Web3Forms key*
+   - Click **Add secret**.
+
+### Step 2: Configure GitHub Pages Source
+1. In your GitHub repository, click **Settings** → **Pages** (left sidebar).
+2. Under **Build and deployment** → **Source**, choose **GitHub Actions**.
+
+### Step 3: Push to Deploy
+Every push to `main` will automatically build the site with your secret and publish it to:
+**https://neerad079.github.io/Portfolio/**
+
+---
+
+## 🏷️ GitHub Repository Metadata Suggestions
+
+To optimize discovery and SEO on GitHub:
+
+- **Repository Description:**
+  > Personal developer portfolio of Neerad S Ramesh — Java & Spring Boot Developer. Built with React 19, Vite, Framer Motion, and GSAP.
+
+- **Website URL:**
+  > `https://neerad079.github.io/Portfolio/`
+
+- **Repository Topics (Tags):**
+  `portfolio`, `developer-portfolio`, `java`, `spring-boot`, `react`, `vite`, `mysql`, `rest-api`, `framer-motion`, `gsap`, `lenis`
 
 ---
 
 ## 👤 Author
 
 **Neerad S Ramesh**  
-- **Website:** [neerad.tech](https://neerad.tech)  
+- **Website:** [https://neerad079.github.io/Portfolio/](https://neerad079.github.io/Portfolio/)  
 - **GitHub:** [@Neerad079](https://github.com/Neerad079)  
 - **Email:** [neeradsramesh@gmail.com](mailto:neeradsramesh@gmail.com)  
-- **College:** National Institute of Technology (NIT), Srinagar  
-
----
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
+- **College:** National Institute of Technology, Srinagar  

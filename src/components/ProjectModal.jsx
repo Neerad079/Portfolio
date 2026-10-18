@@ -83,11 +83,22 @@ export default function ProjectModal({ project, onClose }) {
 
         {/* Actions */}
         <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+          {project.demo && (
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn--primary"
+            >
+              <ExternalLink size={16} />
+              <span>Direct Access</span>
+            </a>
+          )}
           <a
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn--primary"
+            className={project.demo ? "btn btn--outline" : "btn btn--primary"}
           >
             <GithubIcon size={16} />
             <span>View Source on GitHub</span>

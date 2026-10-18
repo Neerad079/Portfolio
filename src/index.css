@@ -117,6 +117,32 @@ button {
   color: inherit;
 }
 
+:focus-visible {
+  outline: 2px solid var(--accent-red);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.75rem 1.25rem;
+  background: var(--accent-red);
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
 /* Container */
 .container {
   width: 100%;
@@ -464,6 +490,28 @@ button {
   50% { opacity: 0.4; transform: scale(0.85); }
 }
 
+.hero__tech-text-wrap {
+  width: 100%;
+  max-width: 1050px;
+  height: 76px;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .hero__tech-text-wrap {
+    height: 56px;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__tech-text-wrap {
+    height: 44px;
+    margin-bottom: 1rem;
+  }
+}
+
 .hero__headline {
   font-size: clamp(2.4rem, 7.5vw, 7.2rem);
   text-transform: uppercase;
@@ -704,6 +752,31 @@ button {
 }
 .arch-system-full {
   display: inline;
+}
+
+.arch-live-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent-lime);
+  background: rgba(199, 255, 151, 0.08);
+  border: 1px solid rgba(199, 255, 151, 0.3);
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.arch-live-btn:hover {
+  background: rgba(199, 255, 151, 0.18);
+  border-color: var(--accent-lime);
+  color: #ffffff;
+  transform: translateY(-1px);
 }
 
 .arch-showcase__tabs {
@@ -1583,6 +1656,15 @@ button {
 textarea.form-control {
   min-height: 120px;
   resize: vertical;
+}
+
+.form-control--error {
+  border-color: #ef4444 !important;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 /* Footer */

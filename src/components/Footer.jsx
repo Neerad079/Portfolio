@@ -53,6 +53,7 @@ export default function Footer() {
           </a>
           <a
             href={PERSONAL_INFO.resumeUrl}
+            download="Neerad_S_Ramesh_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn--outline btn--sm"

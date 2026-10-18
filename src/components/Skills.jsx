@@ -27,7 +27,7 @@ export default function Skills() {
               Skills & Technologies
             </ScrollFloat>
             <p className="section__subtitle">
-              Verified tech stack spanning core algorithms in Java to enterprise Spring Boot microservices and React web frontends.
+              Core technologies spanning algorithms and backend services in Java and Spring Boot to React web frontends.
             </p>
           </div>
         </div>

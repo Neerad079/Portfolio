@@ -29,6 +29,9 @@ export default function App() {
           enableScrollRipple={true}
         />
         
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
         <Navbar />
         <main id="main-content" style={{ position: 'relative', zIndex: 1 }}>
           <Hero />

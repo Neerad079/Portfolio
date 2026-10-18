@@ -2,9 +2,9 @@
   "name": "neerad-portfolio",
   "private": true,
   "version": "1.0.0",
-  "description": "Production personal developer portfolio for Neerad S Ramesh — Full-stack developer & backend engineer specializing in Java, Spring Boot, and React.",
+  "description": "Personal developer portfolio for Neerad S Ramesh — Java & Spring Boot Developer building secure REST APIs, full-stack applications, and AI-powered tools.",
   "author": "Neerad S Ramesh <neeradsramesh@gmail.com>",
-  "homepage": "https://neerad.tech",
+  "homepage": "https://neerad079.github.io/Portfolio/",
   "license": "MIT",
   "type": "module",
   "scripts": {

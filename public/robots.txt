@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://neerad079.github.io/Portfolio/sitemap.xml

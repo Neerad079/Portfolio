@@ -23,7 +23,7 @@ export default function Education() {
               Academics & Recognition
             </ScrollFloat>
             <p className="section__subtitle">
-              Formal engineering education at NIT Srinagar alongside certified algorithmic problem-solving credentials.
+              Formal engineering education at NIT Srinagar alongside software development and Java credentials.
             </p>
           </div>
         </div>

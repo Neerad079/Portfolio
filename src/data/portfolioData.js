@@ -1,24 +1,29 @@
+// Centralized portfolio data for Neerad S Ramesh
+// Grounded strictly in verified facts and codebase repositories
+
+const BASE = import.meta.env.BASE_URL || './';
+export const RESUME_URL = `${BASE.endsWith('/') ? BASE : BASE + '/'}Neerad_S_Ramesh_Resume.pdf`;
+
 export const PERSONAL_INFO = {
   name: "Neerad S Ramesh",
-  role: "Full-Stack Developer & Backend Engineer",
-  tagline: "BUILDING PRODUCTION-GRADE SOFTWARE",
+  role: "Java & Spring Boot Developer",
+  tagline: "BUILDING SOFTWARE",
   subTagline:
-    "B.Tech in Computer Science at NIT Srinagar. Focused on architecting resilient Java & Spring Boot backend systems, reactive web interfaces, and containerized AI-driven pipelines.",
+    "Java & Spring Boot developer building secure REST APIs, full-stack applications, and AI-powered tools with Spring Boot, React, and MySQL. CS undergrad at NIT Srinagar.",
   email: "neeradsramesh@gmail.com",
   phone: "+91 95719 94484",
   github: "https://github.com/Neerad079",
   githubHandle: "github.com/Neerad079",
-  resumeUrl: "/Neerad_S_Ramesh_Resume.pdf",
+  publicUrl: "https://neerad079.github.io/Portfolio/",
+  resumeUrl: RESUME_URL,
   location: "Srinagar, Jammu & Kashmir, India",
   college: "National Institute of Technology, Srinagar",
-  status: "Available for internships & full-stack roles",
+  status: "Available for internships & software engineering roles",
 };
 
 export const STATS = [
-  { value: "3+", label: "Full-Stack Systems", detail: "Shipped & Open Sourced" },
-  { value: "100+", label: "DSA Problems Solved", detail: "LeetCode & HackerRank" },
-  { value: "5★", label: "HackerRank Java Gold", detail: "Top 10% Global Rank" },
-  { value: "80%+", label: "Test Coverage", detail: "JUnit 5 & Mockito Suites" },
+  { value: "3+", label: "Full-Stack Projects", detail: "Built & Open Sourced" },
+  { value: "5★", label: "HackerRank Java Gold" },
 ];
 
 export const SKILL_CATEGORIES = [
@@ -28,7 +33,7 @@ export const SKILL_CATEGORIES = [
     description: "Core languages for systems & algorithms",
     skills: [
       { name: "Java", level: "Advanced", badge: "Primary", highlight: true },
-      { name: "C++", level: "Proficient", badge: "DSA" },
+      { name: "C++", level: "Proficient", badge: "Algorithms" },
       { name: "SQL", level: "Proficient", badge: "Queries & DDL" },
       { name: "JavaScript (ES6+)", level: "Proficient", badge: "Frontend" },
       { name: "HTML5 & CSS3", level: "Advanced", badge: "Modern UI" },
@@ -37,7 +42,7 @@ export const SKILL_CATEGORIES = [
   {
     id: "backend",
     name: "Backend Architecture",
-    description: "Robust enterprise services & API layers",
+    description: "Robust services & RESTful API layers",
     skills: [
       { name: "Spring Boot 3.x", level: "Advanced", badge: "Core Framework", highlight: true },
       { name: "Spring Security", level: "Proficient", badge: "Auth Chain", highlight: true },
@@ -73,14 +78,14 @@ export const SKILL_CATEGORIES = [
   {
     id: "devops",
     name: "DevOps & Databases",
-    description: "Containerization, CI/CD and relational persistence",
+    description: "Relational persistence, containers, and automated workflows",
     skills: [
       { name: "MySQL 8.0", level: "Advanced", badge: "Relational DB", highlight: true },
       { name: "Docker", level: "Proficient", badge: "Containers" },
-      { name: "Docker Compose", level: "Proficient", badge: "Multi-Service", highlight: true },
+      { name: "Docker Compose", level: "Proficient", badge: "Multi-Container", highlight: true },
       { name: "GitHub Actions", level: "Proficient", badge: "Automated CI/CD" },
       { name: "Maven", level: "Proficient", badge: "Build Lifecycle" },
-      { name: "Git", level: "Advanced", badge: "Feature Branching" },
+      { name: "Git", level: "Advanced", badge: "Version Control" },
     ],
   },
   {
@@ -90,10 +95,10 @@ export const SKILL_CATEGORIES = [
     skills: [
       { name: "JUnit 5", level: "Advanced", badge: "Unit Testing", highlight: true },
       { name: "Mockito", level: "Advanced", badge: "Mocking & Stubs" },
-      { name: "Repository Pattern", level: "Advanced", badge: "Separation of Concerns" },
-      { name: "DTO & Builder Patterns", level: "Advanced", badge: "Clean Contracts" },
-      { name: "Singleton & Factory", level: "Proficient", badge: "OOP Design" },
-      { name: "Postman", level: "Advanced", badge: "Contract Testing" },
+      { name: "MVC Architecture", level: "Advanced", badge: "Separation of Concerns" },
+      { name: "Repository Pattern", level: "Advanced", badge: "Data Abstraction" },
+      { name: "DTO Pattern", level: "Advanced", badge: "Clean Contracts" },
+      { name: "Postman", level: "Advanced", badge: "API Verification" },
     ],
   },
 ];
@@ -108,11 +113,14 @@ export const FEATURED_PROJECTS = [
     date: "Aug 2026",
     role: "Lead Full-Stack Developer",
     github: "https://github.com/Neerad079/AI-Resume-Analyzer",
-    demo: null,
+    demo: "https://hireiq.neerad.tech/",
+    liveUrl: "https://hireiq.neerad.tech/",
     stack: [
       "Spring Boot 3.3",
       "React 19",
-      "Anthropic Claude API",
+      "NVIDIA Nemotron",
+      "Google OAuth 2.0",
+      "GitHub Actions",
       "Docker Compose",
       "MySQL 8.0",
       "Spring Security",
@@ -120,25 +128,65 @@ export const FEATURED_PROJECTS = [
       "JUnit 5",
     ],
     overview:
-      "A production-grade career optimization platform that uses structured prompt engineering and Claude 3.5 Sonnet to score resumes against Job Descriptions, inject missing ATS keywords, rewrite bullets using Google's X-Y-Z formula, and auto-generate personalized cold outreach messages in under 3 seconds.",
+      "A full-stack career platform built for the Razorpay AI BuildAthon 2026 that uses structured prompt pipelines with NVIDIA's Nemotron model to score resumes against job descriptions, highlight missing skills, rewrite bullets with Google's X-Y-Z formula, and generate targeted outreach messages in under 3 seconds.",
     metrics: [
       { label: "Analysis Latency", value: "< 3s" },
       { label: "Test Coverage", value: "80%+" },
       { label: "REST Endpoints", value: "7 Secured" },
-      { label: "Deploy Time", value: "1-Click Docker" },
+      { label: "Deploy Setup", value: "Docker Compose" },
     ],
     highlights: [
-      "Containerized full stack with Docker Compose running multi-container setup (Spring Boot backend, React SPA frontend, MySQL 8.0).",
-      "Secured 7 REST endpoints with Spring Security 6, stateless JWT authentication, and OAuth 2.0 social authorization.",
-      "Achieved 80%+ line coverage across service and controller layers using JUnit 5, Mockito stubs, and AssertJ.",
+      "Containerized full stack with Docker Compose and automated test/build workflows via GitHub Actions CI/CD.",
+      "Secured 7 REST endpoints with Spring Security, stateless JWT authentication, and Google OAuth 2.0 social authorization.",
+      "Achieved 80%+ line coverage across service and controller layers using JUnit 5 and Mockito stubs.",
       "Engineered global error handling using @ControllerAdvice with custom RFC 7807 problem details and strict DTO validation.",
     ],
     architecture: {
       client: "React 19 SPA + Vite + Responsive CSS design tokens",
-      apiGateway: "Spring Boot 3.3 with Spring Security JWT Filter Chain",
-      aiEngine: "Anthropic Claude API pipeline with structured JSON schema responses",
+      apiGateway: "Spring Boot 3.3 with Spring Security JWT Filter Chain & Google OAuth 2.0",
+      aiEngine: "NVIDIA Nemotron pipeline with structured JSON schema responses",
       database: "MySQL 8.0 with Spring Data JPA & Hibernate 6",
-      deployment: "Multi-stage Docker containers orchestrated via Docker Compose",
+      deployment: "Multi-stage Docker containers with automated GitHub Actions CI/CD",
+    },
+  },
+  {
+    id: "urban-heat",
+    title: "Urban Heat Mitigation Framework",
+    tagline: "Physics-Constrained AI Framework for Urban Heat Island Mitigation",
+    badge: "ISRO Hackathon 2026",
+    featured: true,
+    date: "Sep 2026",
+    role: "Backend Developer & Data Integration",
+    github: "https://github.com/Neerad079",
+    demo: null,
+    stack: [
+      "Java 17",
+      "Spring Boot 3.2",
+      "React",
+      "Leaflet",
+      "REST APIs",
+      "OpenCSV",
+      "Python",
+    ],
+    overview:
+      "An AI-powered decision support system designed for the ISRO Bharatiya Antariksh Hackathon 2026 to convert satellite Earth observation data (Landsat 9, Sentinel-2, ERA5) into prioritized, physics-constrained heat mitigation plans and counterfactual cooling simulations for urban planners.",
+    metrics: [
+      { label: "Grid Resolution", value: "500m" },
+      { label: "Physics Constraints", value: "19 Monotonic" },
+      { label: "Cooling Scenarios", value: "4 Simulated" },
+      { label: "Data Pipeline", value: "Satellite to API" },
+    ],
+    highlights: [
+      "Engineered Spring Boot backend services to parse, process, and serve multi-source geospatial heat indices via clean REST contracts.",
+      "Implemented REST endpoints (/hotspots, /scenarios, /summary) delivering top-20 priority intervention zones and counterfactual cooling forecasts.",
+      "Collaborated with team Beyond Orbit on integrating satellite-derived Land Surface Temperature (LST) and SHAP explainability drivers.",
+      "Designed interactive React dashboard integration displaying hotspot tiers and scenario comparison tables.",
+    ],
+    architecture: {
+      client: "React + Leaflet interactive hotspot map with scenario comparison panel",
+      backendLayer: "Java 17 & Spring Boot REST controllers serving hotspot and scenario models",
+      dataLayer: "Python feature pipeline processing Landsat 9, Sentinel-2, and ERA5 data",
+      mlIntegration: "Physics-constrained XGBoost with SHAP explainability and cooling simulations",
     },
   },
   {
@@ -148,7 +196,7 @@ export const FEATURED_PROJECTS = [
     badge: "Full-Stack Security",
     featured: true,
     date: "Jan – Apr 2025",
-    role: "Backend Architect & Team Lead",
+    role: "Backend Developer & Team Lead",
     github: "https://github.com/Neerad079/student-portal",
     demo: null,
     stack: [
@@ -158,25 +206,24 @@ export const FEATURED_PROJECTS = [
       "Hibernate/JPA",
       "MySQL",
       "BCrypt",
-      "Python Microservice",
     ],
     overview:
-      "A robust educational identity and session management portal engineered with strict 4-layer separation (Controller, Service, Repository, DTO). Enforces stateless JWT authentication and role-based access control (RBAC) across distinct student and administrator authorization boundaries.",
+      "An educational identity and session management portal engineered with strict 4-layer separation (Controller, Service, Repository, DTO). Enforces stateless JWT authentication and role-based access control (RBAC) across distinct student and administrator authorization boundaries.",
     metrics: [
       { label: "Commits", value: "40+" },
       { label: "User Roles", value: "2 (Admin/Student)" },
-      { label: "Password Hash", value: "BCrypt 10 rounds" },
-      { label: "Architecture", value: "4-Layer Clean" },
+      { label: "Password Hash", value: "BCrypt" },
+      { label: "Architecture", value: "4-Layer MVC" },
     ],
     highlights: [
       "Clean 4-layer architecture strictly isolating HTTP transport, business transactions, and persistence concerns.",
       "Stateless Spring Security filter chain with custom JwtAuthFilter and DaoAuthenticationProvider.",
-      "Integrated external Python microservice via versioned, validated REST contracts.",
-      "Maintained professional feature-branch Git workflow across 40+ commits with zero regressions.",
+      "Paired JWT token generation (jjwt 0.11.5) for stateless sessions with BCrypt password hashing at rest.",
+      "Maintained feature-branch Git workflow across 40+ commits with zero regressions.",
     ],
     architecture: {
       client: "Web UI interfacing with authenticated REST contracts",
-      authLayer: "JwtAuthenticationFilter extracting Bearer tokens before UsernamePasswordAuthenticationFilter",
+      authLayer: "JwtAuthFilter extracting Bearer tokens before UsernamePasswordAuthenticationFilter",
       businessLayer: "Spring Service layer with transaction management",
       persistence: "Hibernate / Spring Data JPA repositories communicating with MySQL",
       integration: "HTTP client communicating with secondary Python analytical microservice",
@@ -211,7 +258,7 @@ export const FEATURED_PROJECTS = [
     highlights: [
       "Engineered 4-entity normalized MySQL schema (Forms, Questions, Users, Responses) with cascade relationships.",
       "Implemented a transaction-safe Data Access Object (DAO) layer guaranteeing automatic rollback on persistence failures.",
-      "Optimized analytical response retrieval using targeted HQL aggregation queries instead of N+1 in-memory joins.",
+      "Optimized analytical response retrieval using targeted HQL aggregation queries instead of full-table scans.",
       "Applied OOP principles including Factory Pattern for question types and Singleton for database session management.",
     ],
     architecture: {
@@ -226,19 +273,19 @@ export const FEATURED_PROJECTS = [
 export const OTHER_PROJECTS = [
   {
     title: "Employee Management System",
-    description: "Enterprise CRUD backend with Spring Boot, JPA, and MySQL managing department hierarchies.",
+    description: "CRUD backend with Spring Boot, JPA, and MySQL managing department hierarchies.",
     tags: ["Spring Boot", "JPA", "MySQL", "REST"],
     github: "https://github.com/Neerad079/Employee-Management-System",
   },
   {
     title: "Spring Boot Redis Cache",
-    description: "High-throughput caching integration reducing database round trips for hot key lookups.",
-    tags: ["Spring Boot", "Redis", "Distributed Caching"],
+    description: "Redis cache integration with Spring Boot for caching entity lookups.",
+    tags: ["Spring Boot", "Redis", "Caching"],
     github: "https://github.com/Neerad079/spring-boot-redis-cache",
   },
   {
     title: "Automated GitHub Actions CI/CD",
-    description: "Production CI/CD workflows running automated Maven builds, unit testing, and Docker image publication.",
+    description: "Automated CI/CD workflows running Maven builds, unit testing, and Docker packaging.",
     tags: ["GitHub Actions", "Docker", "Maven", "CI/CD"],
     github: "https://github.com/Neerad079/GithubActions",
   },
@@ -260,7 +307,7 @@ export const EDUCATION = [
     highlights: [
       "Rigorous coursework in Data Structures & Algorithms, Database Management Systems, Computer Networks, and Object-Oriented Software Engineering.",
       "Active participant in technical hackathons, algorithmic problem solving, and backend engineering workshops.",
-      "Hands-on architectural development of containerized distributed systems.",
+      "Hands-on development of full-stack applications and backend services with Spring Boot and React.",
     ],
   },
 ];
@@ -270,9 +317,9 @@ export const ACHIEVEMENTS = [
     title: "HackerRank Java 5-Star Gold Badge",
     issuer: "HackerRank",
     year: "2025",
-    category: "Competitive Programming & Problem Solving",
+    category: "Java Language & OOP",
     description:
-      "Awarded highest tier 5-Star Gold Badge placing in the top 10% of Java developers globally. Solved 100+ rigorous challenges in algorithmic efficiency, polymorphism, regex, threads, and complex data structures.",
+      "Earned 5-Star Gold Badge in Java on HackerRank, demonstrating proficiency in core language fundamentals, OOP design, polymorphism, and problem solving.",
     badgeColor: "#f59e0b",
   },
   {
@@ -281,7 +328,7 @@ export const ACHIEVEMENTS = [
     year: "2026",
     category: "AI & Full-Stack Systems",
     description:
-      "Engineered HireIQ within hackathon timeline, pairing Spring Boot 3.3 backend security with Claude 3.5 prompt pipelines and React 19 UI.",
+      "Engineered HireIQ within hackathon timeline, pairing Spring Boot 3.3 backend security with NVIDIA Nemotron prompt pipelines and React 19 UI.",
     badgeColor: "#3b82f6",
   },
 ];

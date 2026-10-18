@@ -12,5 +12,15 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor-react': ['react', 'react-dom'],
+          'vendor-motion': ['framer-motion'],
+          'vendor-animation': ['gsap', 'lenis', 'canvas-confetti'],
+          'vendor-icons': ['lucide-react'],
+        },
+      },
+    },
   },
 });

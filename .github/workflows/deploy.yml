@@ -32,6 +32,8 @@ jobs:
         run: npm ci
 
       - name: Build production bundle
+        env:
+          VITE_WEB3FORMS_KEY: ${{ secrets.VITE_WEB3FORMS_KEY }}
         run: npm run build
 
       - name: Upload artifact

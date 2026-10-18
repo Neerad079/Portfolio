@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowUpRight, Eye, Layers } from 'lucide-react';
+import { ArrowUpRight, Eye, Layers, ExternalLink } from 'lucide-react';
 import { FEATURED_PROJECTS, OTHER_PROJECTS } from '../data/portfolioData';
 import { GithubIcon } from './Icons';
 import ProjectModal from './ProjectModal';
@@ -44,7 +44,7 @@ export default function Projects() {
               Featured Projects
             </ScrollFloat>
             <p className="section__subtitle">
-              Production-grade systems developed with clean architectural patterns, robust test suites, and containerized architectures. Scroll down to experience the stacked systems.
+              Full-stack applications and backend services developed with Spring Boot, React, and MySQL. Scroll down to explore the project architectures.
             </p>
           </div>
         </div>
@@ -111,11 +111,24 @@ export default function Projects() {
                     </div>
 
                     <div className="project-card__actions">
+                      {project.demo && (
+                        <a
+                          href={project.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn btn--primary btn--sm"
+                          id={`project-${project.id}-live`}
+                        >
+                          <ExternalLink size={15} />
+                          <span>Direct Access</span>
+                        </a>
+                      )}
+
                       <a
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn btn--primary btn--sm"
+                        className={project.demo ? "btn btn--outline btn--sm" : "btn btn--primary btn--sm"}
                         id={`project-${project.id}-github`}
                       >
                         <GithubIcon size={15} />
@@ -161,7 +174,7 @@ export default function Projects() {
               Other Noteworthy Repositories
             </h3>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>
-              Open-source implementations covering enterprise microservices, distributed caching, and automated CI/CD.
+              Open-source implementations covering backend REST APIs, relational persistence, and automated CI/CD.
             </p>
           </div>
           <a
