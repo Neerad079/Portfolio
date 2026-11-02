@@ -2,7 +2,8 @@
 // Grounded strictly in verified facts and codebase repositories
 
 const BASE = import.meta.env.BASE_URL || './';
-export const RESUME_URL = `${BASE.endsWith('/') ? BASE : BASE + '/'}Neerad_S_Ramesh_Resume.pdf`;
+export const RESUME_FILENAME = "Neerad_Resume_Full_Stack.pdf";
+export const RESUME_URL = `${BASE.endsWith('/') ? BASE : BASE + '/'}${RESUME_FILENAME}`;
 
 export const PERSONAL_INFO = {
   name: "Neerad S Ramesh",
@@ -16,6 +17,7 @@ export const PERSONAL_INFO = {
   githubHandle: "github.com/Neerad079",
   publicUrl: "https://neerad079.github.io/Portfolio/",
   resumeUrl: RESUME_URL,
+  resumeFilename: RESUME_FILENAME,
   location: "Srinagar, Jammu & Kashmir, India",
   college: "National Institute of Technology, Srinagar",
   status: "Available for internships & software engineering roles",
